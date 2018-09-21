@@ -22,8 +22,8 @@ A ideia é torna o projeto prático, atender a todos os pré-requisitos do desaf
 
 #### 1 - Realizar o download no formato zip do Git ou simplesmente clonar o projeto. 
 Basta adicionar a classe ao projeto e instancia-la:
-```csharp
-var soket = new SoketSupport();
+```node
+$ git clone git://github.com/AllanTeixeira/projeto_stone
 ```
 
 #### 2 - Dentro da pasta do projeto você deve realizar o seguinte comando:
@@ -75,9 +75,10 @@ Existem algumas opções de colocar esse tipo de projeto no ar. A mais interessa
 ![enter image description here](https://lh3.googleusercontent.com/-3ZP2iFVzeZc/W5lybGibShI/AAAAAAAAA4c/YYztJOIWC40PqAj2YENxsb1PNw1vKnAGACLcBGAs/s0/TELA+INICIAL.png "TELA INICIAL.png")
 
 #Tela Inicial
+![enter image description here](https://image.ibb.co/mi6a6e/TELA_INICIAL2.png)
+
+#Tela De Funcionários Cadastrados
 ![enter image description here](https://image.ibb.co/g65DsK/tela_lista_de_funcion_rio_cadastrados.png)
-
-
 
 
 ##Tela Editar Funcionário
