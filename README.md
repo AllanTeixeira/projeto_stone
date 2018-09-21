@@ -75,7 +75,7 @@ Existem algumas opções de colocar esse tipo de projeto no ar. A mais interessa
 ![enter image description here](https://lh3.googleusercontent.com/-3ZP2iFVzeZc/W5lybGibShI/AAAAAAAAA4c/YYztJOIWC40PqAj2YENxsb1PNw1vKnAGACLcBGAs/s0/TELA+INICIAL.png "TELA INICIAL.png")
 
 #Tela Inicial
-![enter image description here](https://lh4.googleusercontent.com/wuPpCsYIjHDP7GH-Hi0yUQ-Rc0ukzXf7riNTb1GP_O5sr3N0GEatrUjxb2osnU6CKyVf5k07GkYSPTVUpnO-=w1366-h626-rw"TELA INICIAL2.png")
+![enter image description here](https://image.ibb.co/g65DsK/tela_lista_de_funcion_rio_cadastrados.png)
 
 
 
