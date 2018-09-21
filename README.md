@@ -69,10 +69,16 @@ Existem algumas opções de colocar esse tipo de projeto no ar. A mais interessa
 * `POST()`: Salva um novo funcionário no banco de dados.
 
 ---
-##Telas
+#Telas
 
-###Tela Protótipo
+#Tela Protótipo
 ![enter image description here](https://lh3.googleusercontent.com/-3ZP2iFVzeZc/W5lybGibShI/AAAAAAAAA4c/YYztJOIWC40PqAj2YENxsb1PNw1vKnAGACLcBGAs/s0/TELA+INICIAL.png "TELA INICIAL.png")
 
-####Tela Editar Funcionário
+#Tela Inicial
+![enter image description here](https://lh4.googleusercontent.com/wuPpCsYIjHDP7GH-Hi0yUQ-Rc0ukzXf7riNTb1GP_O5sr3N0GEatrUjxb2osnU6CKyVf5k07GkYSPTVUpnO-=w1366-h626-rw"TELA INICIAL2.png")
+
+
+
+
+##Tela Editar Funcionário
 ![enter image description here](https://lh3.googleusercontent.com/-2GdejjTsZAw/W5lyL7-WfhI/AAAAAAAAA4U/a94yC1lO3sodaaPGV9TZwQql0ZALH6cDwCLcBGAs/s0/tela+editar+funcionario.png "tela editar funcionario.png")
