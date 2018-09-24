@@ -4,17 +4,17 @@ const express = require('express'),
       morgan = require('morgan'),
       mysql = require('mysql'),
       myConnection = require('express-myconnection');
-     // const swal = require('sweetalert2');
-
-      
-
-
+     
+   
+// Cria uma constante do Express
 const app = express();
 
-// importing routes
+// importando as rotas
 const Routes = require('./routes/rotas');
 
-// settings
+
+
+// configurações
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -30,13 +30,14 @@ app.use(myConnection(mysql, {
 }, 'single'));
 app.use(express.urlencoded({extended: false}));
 
-// routes
+// usando routes
 app.use('/',Routes);
 
-// static files
+// onde vão estar os meu arquivos estáticos 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// starting the server
+// start o server
 app.listen(app.get('port'), () => {
   console.log(`server on port ${app.get('port')}`);
 });
+
