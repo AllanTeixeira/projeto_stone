@@ -1,10 +1,10 @@
--- to create a new database
+-- Cria uma nova database
 CREATE DATABASE Stone;
 
--- to use database
+-- Usa a database
 use Stone;
 
--- creating a new table
+-- Cria uma nova tabela
 CREATE TABLE funcionario (
   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nome VARCHAR(50) NOT NULL,
@@ -12,10 +12,10 @@ CREATE TABLE funcionario (
   cargo VARCHAR(15) NOT NULL
 );
 
--- to show all tables
+-- Testa se a tabela foi mesmo criada
 show tables;
 
--- to describe table
+-- Mostra os detalhes da tabela funcionário
 describe funcionario;
 
 
