@@ -1,5 +1,7 @@
 const controller = {};
 
+var Log = require('log')
+  , log = new Log('info');
 
 //Realização a conexão com o Banco de Dados e traz um array dos Funcionários para ser exibido na page Lista Funcionário
 controller.get = (req, res) => {
@@ -40,7 +42,7 @@ controller.post = (req, res) => {
 
   req.getConnection((err, connection) => {
     const query = connection.query('INSERT INTO funcionario set ?', data, (err, funcionario) => {
-      console.log(funcionario);
+     
      res.redirect('/');
      
     })
@@ -69,7 +71,7 @@ controller.put = (req, res) => {
   req.getConnection((err, conn) => {
 
   conn.query('UPDATE funcionario set ? where id = ?', [newFuncionario, id], (err, rows) => {
-    res.redirect('/');
+    res.redirect('/list');
   });
   });
 
@@ -81,7 +83,7 @@ controller.delete = (req, res) => {
   const { id } = req.params;
   req.getConnection((err, connection) => {
     connection.query('DELETE FROM funcionario WHERE id = ?', [id], (err, rows) => {
-      res.redirect('/');
+      res.redirect('/list');
     });
   });
 
