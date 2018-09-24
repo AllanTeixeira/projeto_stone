@@ -59,7 +59,7 @@ Existem algumas opções de colocar esse tipo de projeto no ar. A mais interessa
      --- funcionarioEdit.ejs
      --- funcionarioList.ejs
 - package.json
-- server.js
+- app.js
 ```
 
 ##Métodos 
