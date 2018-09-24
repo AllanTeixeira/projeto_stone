@@ -39,7 +39,7 @@
     <div class="col-md-5 offset-md-3 card">
       <div class="card-body">
           <h1>Editar Funcionário</h1>
-        <form action="/update/<%= data.id %>" method="POST">
+        <form action="/update/<%= data.id %>" method="UPDATE">
           <div class="form-group">
            <h2>Nome:</h2> 
             <input type="text" name="nome" value="<%= data.nome%>" placeholder="Nome" class="form-control" pattern="[a-zA-Z\s]+$" required="required" title="O campo nome não pode conter números" autofocus>
