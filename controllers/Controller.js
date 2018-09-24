@@ -1,6 +1,7 @@
 const controller = {};
 
 
+//Realização a conexão com o Banco de Dados e traz um array dos Funcionários para ser exibido na page Lista Funcionário
 controller.get = (req, res) => {
   req.getConnection((err, conn) => {
     conn.query('SELECT * FROM funcionario', (err, funcionario) => {
@@ -14,7 +15,7 @@ controller.get = (req, res) => {
   });
 };
 
-
+// Função de Inicialização e Conexão com o Bancos de Dados
 controller.init = (req, res) => {
   req.getConnection((err, conn) => {
     conn.query('SELECT * FROM funcionario', (err, funcionario) => {
@@ -31,25 +32,24 @@ controller.init = (req, res) => {
 
 
 
-
+// Função Post: Salva um novo funcionário no banco de dados
 controller.post = (req, res) => {
   const data = req.body;
-  
-  console.log(data)
+
+  console.log(data);
+
   req.getConnection((err, connection) => {
     const query = connection.query('INSERT INTO funcionario set ?', data, (err, funcionario) => {
-      console.log(funcionario)
-
-    
-      swal("Hello world!");
+      console.log(funcionario);
      res.redirect('/');
      
     })
   })
-  
+  log.info('Funcionário cadastrado com sucesso');
 };
 
 
+// Função Edit: Seleciona o funcionário para ser exibido na Page Edit
 controller.edit = (req, res) => {
   const { id } = req.params;
   req.getConnection((err, conn) => {
@@ -59,8 +59,10 @@ controller.edit = (req, res) => {
       })
     });
   });
+
 };
 
+// Função Put: faz as alterações em um determinado funcionário a partir do seu ID.
 controller.put = (req, res) => {
   const { id } = req.params;
   const newFuncionario = req.body;
@@ -70,8 +72,11 @@ controller.put = (req, res) => {
     res.redirect('/');
   });
   });
+
+  log.info('Funcionário editado com sucesso!');
 };
 
+// Função Delete: apaga um funcionário cadastrado a partir do seu ID.
 controller.delete = (req, res) => {
   const { id } = req.params;
   req.getConnection((err, connection) => {
@@ -79,6 +84,8 @@ controller.delete = (req, res) => {
       res.redirect('/');
     });
   });
+
+  log.info('Funcionário deletado com sucesso!');
 }
 
 module.exports = controller;
