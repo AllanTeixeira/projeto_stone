@@ -39,7 +39,7 @@ Em seguida será necessário ter uma base de banco de dados MYSQL e garantir que
 
 Existem algumas opções de colocar esse tipo de projeto no ar. A mais interessante na minha opinião é a “esteira”.  O Jenkins pega de um versionador(GIT) e compila, o que vai gerar um compilável do Node e do EJS, NG build. Gerando o arquivo “.dist”, é necessário colocar esse arquivo num servidor que suporte EJS e Node.
 
- No caso da Amazon, um S3 já resolveria o problema. Outra forma é utilizar a minha própria máquina como servidor do banco de dados e apenas expondo o end-point do serviço.
+ No caso da Amazon, um S3 já resolveria o problema. Outra forma é utilizar uma máquina como servidor do banco de dados e apenas expondo o end-point do serviço.
  
 É possível realizar testes localmente dos serviços do projeto, utilizando o Postman para acompanhar o retorno dos GET/POST para o Banco de dados. Outra possibilidade é utilizar o próprio CMD, para rodar o Node como Back-end na porta 3000. 
 
